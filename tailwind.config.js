@@ -5,7 +5,17 @@ export default {
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        animation: {
+          waves: 'waves 10s linear infinite',
+        },
+        keyframes: {
+          waves: {
+            '0%': { backgroundPosition: '0 0' },
+            '100%': { backgroundPosition: '200% 0' },
+          },
+        },
+      },
     },
     plugins: [],
   }
