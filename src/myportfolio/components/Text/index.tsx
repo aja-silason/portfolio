@@ -1,9 +1,9 @@
 type props = {
     text: string,
-    style: object
+    style?: object
 }
 export const Text = ({text, style}: props) => {
     return (
-        <p className="" style={style}>{text}</p>
+        <p className="font-normal text-[10pt]" style={style}>{text}</p>
     )
 }

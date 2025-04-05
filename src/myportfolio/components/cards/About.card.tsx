@@ -1,0 +1,17 @@
+import { AlignBottom } from "@phosphor-icons/react"
+import { Text } from "../Text"
+
+export const AboutCard = () => {
+    return (
+        <div className="flex bg-[#0b1225a1] shadow border rounded-[.5em] md:w-full flex-col gap-[1em]">
+            <div className="bg-[#7c4dff3f] flex flex-row items-center gap-[.5em] p-[.5em] rounded-t-[.5em]">
+                <AlignBottom fill="white" size={20} />
+                <Text text="Sobre"/>
+            </div>
+
+            <div className="p-[1em] text-justify">
+                <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus aperiam, architecto nam voluptas mollitia reiciendis similique aspernatur, iusto, corrupti quos. Reiciendis odio sint expedita. Est accusamus minus accusantium nostrum?"/>
+            </div>
+        </div>
+    )
+}
