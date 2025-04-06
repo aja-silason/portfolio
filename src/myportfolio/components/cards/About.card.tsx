@@ -15,7 +15,10 @@ export const AboutCard = () => {
             </div>
 
             <div className="p-[1em] text-justify">
-                <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus aperiam, architecto nam voluptas mollitia reiciendis similique aspernatur, iusto, corrupti quos. Reiciendis odio sint expedita. Est accusamus minus accusantium nostrum?"/>
+                <Text text="👋 Olá, sou @ananiaaugusto,"/>
+                <Text text="👀 interessom-me pelas áreas de desenvolvimento frontend, backend, mobile."/>
+                <Text text="🌱 Estou constantemente estudando sobre padrões de desenvolvimento, arquitecturas de software e como isso pode melhorar o meu código."/>
+                <Text text="📫 Tu podes encontrar-me das seguintes maneiras detalhadas em baixo:"/>
             </div>
         </div>
     )

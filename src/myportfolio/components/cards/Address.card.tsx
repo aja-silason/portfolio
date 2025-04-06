@@ -74,9 +74,9 @@ export const AddressCard = () => {
             <div className="p-[1em] flex flex-col gap-[1em] md:h-[15vh] overflow-y-scroll">
 
                 {
-                    addressData?.map((address: propsAddress) => {
+                    addressData?.map((address: propsAddress, index:number) => {
                         return (
-                            <div className="flex gap-[.5em] items-startr">
+                            <div className="flex gap-[.5em] items-start" key={index}>
                                 {address?.icon}
                                 <div className="flex flex-col gap-0">
                                     <Text text={address?.title} style={{fontWeight: "600", fontSize: "11pt"}}/>
@@ -89,9 +89,9 @@ export const AddressCard = () => {
 
 
                 {
-                    socialMediaData?.map((data: propsHref) => {
+                    socialMediaData?.map((data: propsHref, index:number) => {
                         return (
-                            <Link to={data?.link} target="_blank">
+                            <Link to={data?.link} target="_blank" key={index}>
                                 <div className="flex gap-[.5em] items-startr">
                                     {data?.icon}
                                     <div className="flex flex-row gap-[.2em]">

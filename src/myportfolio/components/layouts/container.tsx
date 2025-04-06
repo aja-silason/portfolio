@@ -1,31 +1,13 @@
-import { ReactNode, useEffect, useState } from "react"
-import { Text } from "../Text";
+import { ReactNode } from "react"
 import { MenuMobile } from "../menu/menu.mobile";
+import { useWindowWidth } from "../../hook/behavior/useResponsivity";
 
 type props = {
     children: ReactNode
 }
 export const Container = ({children}: props) => {
 
-
-    const [visible, setVisible] = useState(false);
-    const [isLargeScreen, setIsLargeScreen] = useState(false); 
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth >= 850) {
-                setIsLargeScreen(false);
-                setVisible(false);
-            } else {
-                setIsLargeScreen(false);
-            }
-        };
-
-        handleResize();
-        window.addEventListener("resize", handleResize);
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    const width = useWindowWidth()
 
     return (
         <div className="bg-[#0b1225]">
@@ -37,7 +19,7 @@ export const Container = ({children}: props) => {
                 
                 <div className="relative z-10 flex items-center justify-center h-full text-white overflow-hidden flex-col">
                 
-                    <div className={`z-50 sx:absolute w-full ${visible && !isLargeScreen ? 'hidden' : 'block'} md:hidden`}>
+                    <div className={`z-50 sx:absolute w-full ${width >= 850 ? 'hidden' : 'block'}`}>
                         <MenuMobile/>
                     </div>
 
