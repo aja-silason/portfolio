@@ -69,7 +69,7 @@ export const ProjectCard = () => {
                                         <div className="flex items-center w-full justify-between gap-[.5em] cursor-pointer">
                                             <div className="flex w-full gap-[.5em]">
                                                 <Text text={project?.project} style={{fontWeight: "600", fontSize: "11pt"}}/>
-                                                <div className="bg-white/10 p-[.2em] rounded-[.2em]">
+                                                <div className={`${width >= 850 ? '' : 'h-[4vh]'} bg-white/10 p-[.2em] rounded-[.2em]`}>
                                                     <Text text={project?.type_project}/>
                                                 </div>    
                                                 <LinkLogo size={15}/>
