@@ -1,11 +1,5 @@
 import {Text} from "../Text"
 
-/*
-<div className="flex bg-[#0b1225a1] shadow border p-[1em] rounded-[.5em] md:w-[30%] flex-col justify-between gap-[1em]">
-
-*/
-
-
 export const ProfileCard = ({data}: any) => {
     
     return (

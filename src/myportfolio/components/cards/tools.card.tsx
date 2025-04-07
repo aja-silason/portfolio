@@ -7,11 +7,6 @@ import { NestJSSVGLogo } from "../svg/nestjs";
 import { ReactSVGLogo } from "../svg/react";
 import { TypeScriptSVGLogo } from "../svg/typescript";
 
-/*
-<div className="flex bg-[#0b1225a1] shadow border rounded-[.5em] md:w-[30%] flex-col gap-[1em]">
-
-*/
-
 const tools = [
     {
         icon: <ReactSVGLogo />  

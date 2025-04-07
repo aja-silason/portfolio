@@ -2,19 +2,25 @@ import { BuildingOffice, Timer } from "@phosphor-icons/react";
 import {Text} from "../Text"
 import { useWindowWidth } from "../../hook/behavior/useResponsivity";
 
-
-/*
-<div className="flex bg-[#0b1225a1] shadow border rounded-[.5em] md:w-[30%] flex-col gap-[1em]">
-
-*/
-
 const timeline = [
     {
         enterprise: "Baxtter Corporation",
         started_at: "15/02/2024",
         finished_at: "presente",
-        location: "Kilamba"
-    }
+        location: "Kilamba, A21"
+    },
+    {
+        enterprise: "Linice Ltd",
+        started_at: "13/02/2023",
+        finished_at: "05/02/2024",
+        location: "Vila de Viana"
+    },
+    {
+        enterprise: "Inokri Soluções Inteligentes - Estágio",
+        started_at: "22/02/2022",
+        finished_at: "15/04/2022",
+        location: "Kilamba, P19"
+    },
 ]
 
 export const TimelineCard = () => {
